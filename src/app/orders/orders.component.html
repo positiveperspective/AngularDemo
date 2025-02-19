@@ -1,0 +1,7 @@
+<p>orders list</p>
+
+@if(orders$ | async; as orders) {
+    @for(order of orders; track order) {
+        {{order | json }}
+    }
+}
